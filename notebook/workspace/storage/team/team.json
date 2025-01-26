@@ -1,0 +1,652 @@
+{
+    "env": {
+        "desc": "",
+        "roles": {
+            "Democrat": {
+                "name": "Biden",
+                "profile": "Democrat",
+                "goal": "",
+                "constraints": "",
+                "desc": "",
+                "is_human": false,
+                "role_id": "",
+                "states": [
+                    "0. SpeakAloud"
+                ],
+                "actions": [
+                    {
+                        "name": "SpeakAloud",
+                        "i_context": {
+                            "kwargs": {},
+                            "config": {
+                                "extra_fields": null,
+                                "project_path": "",
+                                "project_name": "",
+                                "inc": false,
+                                "reqa_file": "",
+                                "max_auto_summarize_code": 0,
+                                "git_reinit": false,
+                                "llm": {
+                                    "extra_fields": null,
+                                    "api_key": "123",
+                                    "api_type": "open_llm",
+                                    "base_url": "http://192.168.12.10:8000/v1",
+                                    "api_version": null,
+                                    "model": "Qwen2.5-32B-Instruct-AWQ",
+                                    "pricing_plan": null,
+                                    "access_key": null,
+                                    "secret_key": null,
+                                    "endpoint": null,
+                                    "app_id": null,
+                                    "api_secret": null,
+                                    "domain": null,
+                                    "max_token": 4096,
+                                    "temperature": 0.0,
+                                    "top_p": 1.0,
+                                    "top_k": 0,
+                                    "repetition_penalty": 1.0,
+                                    "stop": null,
+                                    "presence_penalty": 0.0,
+                                    "frequency_penalty": 0.0,
+                                    "best_of": null,
+                                    "n": null,
+                                    "stream": false,
+                                    "logprobs": null,
+                                    "top_logprobs": null,
+                                    "timeout": 600,
+                                    "proxy": null,
+                                    "calc_usage": true
+                                },
+                                "proxy": "",
+                                "search": {
+                                    "extra_fields": null,
+                                    "api_type": "ddg",
+                                    "api_key": "",
+                                    "cse_id": "",
+                                    "search_func": null,
+                                    "params": {
+                                        "engine": "google",
+                                        "google_domain": "google.com",
+                                        "gl": "us",
+                                        "hl": "en"
+                                    }
+                                },
+                                "browser": {
+                                    "extra_fields": null,
+                                    "engine": "playwright",
+                                    "browser_type": "chromium"
+                                },
+                                "mermaid": {
+                                    "extra_fields": null,
+                                    "engine": "nodejs",
+                                    "path": "mmdc",
+                                    "puppeteer_config": "",
+                                    "pyppeteer_path": "/usr/bin/google-chrome-stable"
+                                },
+                                "s3": null,
+                                "redis": null,
+                                "repair_llm_output": false,
+                                "prompt_schema": "json",
+                                "workspace": {
+                                    "extra_fields": null,
+                                    "path": "E:\\wow-agent\\notebook\\workspace",
+                                    "use_uid": false,
+                                    "uid": ""
+                                },
+                                "enable_longterm_memory": false,
+                                "code_review_k_times": 2,
+                                "metagpt_tti_url": "",
+                                "language": "English",
+                                "redis_key": "placeholder",
+                                "iflytek_app_id": "",
+                                "iflytek_api_secret": "",
+                                "iflytek_api_key": "",
+                                "azure_tts_subscription_key": "",
+                                "azure_tts_region": ""
+                            },
+                            "repo": null,
+                            "git_repo": null,
+                            "src_workspace": null,
+                            "cost_manager": {
+                                "total_prompt_tokens": 0,
+                                "total_completion_tokens": 0,
+                                "total_budget": 0,
+                                "max_budget": 10.0,
+                                "total_cost": 0,
+                                "token_costs": {
+                                    "gpt-3.5-turbo": {
+                                        "prompt": 0.0015,
+                                        "completion": 0.002
+                                    },
+                                    "gpt-3.5-turbo-0301": {
+                                        "prompt": 0.0015,
+                                        "completion": 0.002
+                                    },
+                                    "gpt-3.5-turbo-0613": {
+                                        "prompt": 0.0015,
+                                        "completion": 0.002
+                                    },
+                                    "gpt-3.5-turbo-16k": {
+                                        "prompt": 0.003,
+                                        "completion": 0.004
+                                    },
+                                    "gpt-3.5-turbo-16k-0613": {
+                                        "prompt": 0.003,
+                                        "completion": 0.004
+                                    },
+                                    "gpt-35-turbo": {
+                                        "prompt": 0.0015,
+                                        "completion": 0.002
+                                    },
+                                    "gpt-35-turbo-16k": {
+                                        "prompt": 0.003,
+                                        "completion": 0.004
+                                    },
+                                    "gpt-3.5-turbo-1106": {
+                                        "prompt": 0.001,
+                                        "completion": 0.002
+                                    },
+                                    "gpt-3.5-turbo-0125": {
+                                        "prompt": 0.001,
+                                        "completion": 0.002
+                                    },
+                                    "gpt-4-0314": {
+                                        "prompt": 0.03,
+                                        "completion": 0.06
+                                    },
+                                    "gpt-4": {
+                                        "prompt": 0.03,
+                                        "completion": 0.06
+                                    },
+                                    "gpt-4-32k": {
+                                        "prompt": 0.06,
+                                        "completion": 0.12
+                                    },
+                                    "gpt-4-32k-0314": {
+                                        "prompt": 0.06,
+                                        "completion": 0.12
+                                    },
+                                    "gpt-4-0613": {
+                                        "prompt": 0.06,
+                                        "completion": 0.12
+                                    },
+                                    "gpt-4-turbo-preview": {
+                                        "prompt": 0.01,
+                                        "completion": 0.03
+                                    },
+                                    "gpt-4-0125-preview": {
+                                        "prompt": 0.01,
+                                        "completion": 0.03
+                                    },
+                                    "gpt-4-1106-preview": {
+                                        "prompt": 0.01,
+                                        "completion": 0.03
+                                    },
+                                    "gpt-4-vision-preview": {
+                                        "prompt": 0.01,
+                                        "completion": 0.03
+                                    },
+                                    "gpt-4-1106-vision-preview": {
+                                        "prompt": 0.01,
+                                        "completion": 0.03
+                                    },
+                                    "text-embedding-ada-002": {
+                                        "prompt": 0.0004,
+                                        "completion": 0.0
+                                    },
+                                    "glm-3-turbo": {
+                                        "prompt": 0.0007,
+                                        "completion": 0.0007
+                                    },
+                                    "glm-4": {
+                                        "prompt": 0.014,
+                                        "completion": 0.014
+                                    },
+                                    "gemini-pro": {
+                                        "prompt": 0.00025,
+                                        "completion": 0.0005
+                                    },
+                                    "moonshot-v1-8k": {
+                                        "prompt": 0.012,
+                                        "completion": 0.012
+                                    },
+                                    "moonshot-v1-32k": {
+                                        "prompt": 0.024,
+                                        "completion": 0.024
+                                    },
+                                    "moonshot-v1-128k": {
+                                        "prompt": 0.06,
+                                        "completion": 0.06
+                                    },
+                                    "open-mistral-7b": {
+                                        "prompt": 0.00025,
+                                        "completion": 0.00025
+                                    },
+                                    "open-mixtral-8x7b": {
+                                        "prompt": 0.0007,
+                                        "completion": 0.0007
+                                    },
+                                    "mistral-small-latest": {
+                                        "prompt": 0.002,
+                                        "completion": 0.006
+                                    },
+                                    "mistral-medium-latest": {
+                                        "prompt": 0.0027,
+                                        "completion": 0.0081
+                                    },
+                                    "mistral-large-latest": {
+                                        "prompt": 0.008,
+                                        "completion": 0.024
+                                    },
+                                    "claude-instant-1.2": {
+                                        "prompt": 0.0008,
+                                        "completion": 0.0024
+                                    },
+                                    "claude-2.0": {
+                                        "prompt": 0.008,
+                                        "completion": 0.024
+                                    },
+                                    "claude-2.1": {
+                                        "prompt": 0.008,
+                                        "completion": 0.024
+                                    },
+                                    "claude-3-sonnet-20240229": {
+                                        "prompt": 0.003,
+                                        "completion": 0.015
+                                    },
+                                    "claude-3-opus-20240229": {
+                                        "prompt": 0.015,
+                                        "completion": 0.075
+                                    },
+                                    "yi-34b-chat-0205": {
+                                        "prompt": 0.0003,
+                                        "completion": 0.0003
+                                    },
+                                    "yi-34b-chat-200k": {
+                                        "prompt": 0.0017,
+                                        "completion": 0.0017
+                                    }
+                                }
+                            }
+                        },
+                        "prefix": "You are a Democrat, named Biden, your goal is . ",
+                        "desc": "",
+                        "__module_class_name": "__main__.SpeakAloud"
+                    }
+                ],
+                "rc": {
+                    "memory": {
+                        "storage": [],
+                        "index": {
+                            "metagpt.actions.add_requirement.UserRequirement": []
+                        },
+                        "ignore_id": false
+                    },
+                    "working_memory": {
+                        "storage": [],
+                        "index": {},
+                        "ignore_id": false
+                    },
+                    "state": 0,
+                    "watch": [
+                        "metagpt.actions.add_requirement.UserRequirement",
+                        "__main__.SpeakAloud"
+                    ],
+                    "react_mode": "react",
+                    "max_react_loop": 1
+                },
+                "addresses": [
+                    "Biden",
+                    "__main__.Debator"
+                ],
+                "planner": {
+                    "plan": {
+                        "goal": "",
+                        "context": "",
+                        "tasks": [],
+                        "task_map": {},
+                        "current_task_id": ""
+                    },
+                    "working_memory": {
+                        "storage": [],
+                        "index": {},
+                        "ignore_id": false
+                    },
+                    "auto_run": false
+                },
+                "recovered": false,
+                "latest_observed_msg": {
+                    "id": "b6352469e1e648049ea8b9a9bca8406c",
+                    "content": "idea=TOPIC",
+                    "instruct_content": null,
+                    "role": "Human",
+                    "cause_by": "metagpt.actions.add_requirement.UserRequirement",
+                    "sent_from": "",
+                    "send_to": [
+                        "Biden"
+                    ]
+                },
+                "opponent_name": "Trump",
+                "__module_class_name": "__main__.Debator"
+            },
+            "Republican": {
+                "name": "Trump",
+                "profile": "Republican",
+                "goal": "",
+                "constraints": "",
+                "desc": "",
+                "is_human": false,
+                "role_id": "",
+                "states": [
+                    "0. SpeakAloud"
+                ],
+                "actions": [
+                    {
+                        "name": "SpeakAloud",
+                        "i_context": {
+                            "kwargs": {},
+                            "config": {
+                                "extra_fields": null,
+                                "project_path": "",
+                                "project_name": "",
+                                "inc": false,
+                                "reqa_file": "",
+                                "max_auto_summarize_code": 0,
+                                "git_reinit": false,
+                                "llm": {
+                                    "extra_fields": null,
+                                    "api_key": "123",
+                                    "api_type": "open_llm",
+                                    "base_url": "http://192.168.12.10:8000/v1",
+                                    "api_version": null,
+                                    "model": "Qwen2.5-32B-Instruct-AWQ",
+                                    "pricing_plan": null,
+                                    "access_key": null,
+                                    "secret_key": null,
+                                    "endpoint": null,
+                                    "app_id": null,
+                                    "api_secret": null,
+                                    "domain": null,
+                                    "max_token": 4096,
+                                    "temperature": 0.0,
+                                    "top_p": 1.0,
+                                    "top_k": 0,
+                                    "repetition_penalty": 1.0,
+                                    "stop": null,
+                                    "presence_penalty": 0.0,
+                                    "frequency_penalty": 0.0,
+                                    "best_of": null,
+                                    "n": null,
+                                    "stream": false,
+                                    "logprobs": null,
+                                    "top_logprobs": null,
+                                    "timeout": 600,
+                                    "proxy": null,
+                                    "calc_usage": true
+                                },
+                                "proxy": "",
+                                "search": {
+                                    "extra_fields": null,
+                                    "api_type": "ddg",
+                                    "api_key": "",
+                                    "cse_id": "",
+                                    "search_func": null,
+                                    "params": {
+                                        "engine": "google",
+                                        "google_domain": "google.com",
+                                        "gl": "us",
+                                        "hl": "en"
+                                    }
+                                },
+                                "browser": {
+                                    "extra_fields": null,
+                                    "engine": "playwright",
+                                    "browser_type": "chromium"
+                                },
+                                "mermaid": {
+                                    "extra_fields": null,
+                                    "engine": "nodejs",
+                                    "path": "mmdc",
+                                    "puppeteer_config": "",
+                                    "pyppeteer_path": "/usr/bin/google-chrome-stable"
+                                },
+                                "s3": null,
+                                "redis": null,
+                                "repair_llm_output": false,
+                                "prompt_schema": "json",
+                                "workspace": {
+                                    "extra_fields": null,
+                                    "path": "E:\\wow-agent\\notebook\\workspace",
+                                    "use_uid": false,
+                                    "uid": ""
+                                },
+                                "enable_longterm_memory": false,
+                                "code_review_k_times": 2,
+                                "metagpt_tti_url": "",
+                                "language": "English",
+                                "redis_key": "placeholder",
+                                "iflytek_app_id": "",
+                                "iflytek_api_secret": "",
+                                "iflytek_api_key": "",
+                                "azure_tts_subscription_key": "",
+                                "azure_tts_region": ""
+                            },
+                            "repo": null,
+                            "git_repo": null,
+                            "src_workspace": null,
+                            "cost_manager": {
+                                "total_prompt_tokens": 0,
+                                "total_completion_tokens": 0,
+                                "total_budget": 0,
+                                "max_budget": 10.0,
+                                "total_cost": 0,
+                                "token_costs": {
+                                    "gpt-3.5-turbo": {
+                                        "prompt": 0.0015,
+                                        "completion": 0.002
+                                    },
+                                    "gpt-3.5-turbo-0301": {
+                                        "prompt": 0.0015,
+                                        "completion": 0.002
+                                    },
+                                    "gpt-3.5-turbo-0613": {
+                                        "prompt": 0.0015,
+                                        "completion": 0.002
+                                    },
+                                    "gpt-3.5-turbo-16k": {
+                                        "prompt": 0.003,
+                                        "completion": 0.004
+                                    },
+                                    "gpt-3.5-turbo-16k-0613": {
+                                        "prompt": 0.003,
+                                        "completion": 0.004
+                                    },
+                                    "gpt-35-turbo": {
+                                        "prompt": 0.0015,
+                                        "completion": 0.002
+                                    },
+                                    "gpt-35-turbo-16k": {
+                                        "prompt": 0.003,
+                                        "completion": 0.004
+                                    },
+                                    "gpt-3.5-turbo-1106": {
+                                        "prompt": 0.001,
+                                        "completion": 0.002
+                                    },
+                                    "gpt-3.5-turbo-0125": {
+                                        "prompt": 0.001,
+                                        "completion": 0.002
+                                    },
+                                    "gpt-4-0314": {
+                                        "prompt": 0.03,
+                                        "completion": 0.06
+                                    },
+                                    "gpt-4": {
+                                        "prompt": 0.03,
+                                        "completion": 0.06
+                                    },
+                                    "gpt-4-32k": {
+                                        "prompt": 0.06,
+                                        "completion": 0.12
+                                    },
+                                    "gpt-4-32k-0314": {
+                                        "prompt": 0.06,
+                                        "completion": 0.12
+                                    },
+                                    "gpt-4-0613": {
+                                        "prompt": 0.06,
+                                        "completion": 0.12
+                                    },
+                                    "gpt-4-turbo-preview": {
+                                        "prompt": 0.01,
+                                        "completion": 0.03
+                                    },
+                                    "gpt-4-0125-preview": {
+                                        "prompt": 0.01,
+                                        "completion": 0.03
+                                    },
+                                    "gpt-4-1106-preview": {
+                                        "prompt": 0.01,
+                                        "completion": 0.03
+                                    },
+                                    "gpt-4-vision-preview": {
+                                        "prompt": 0.01,
+                                        "completion": 0.03
+                                    },
+                                    "gpt-4-1106-vision-preview": {
+                                        "prompt": 0.01,
+                                        "completion": 0.03
+                                    },
+                                    "text-embedding-ada-002": {
+                                        "prompt": 0.0004,
+                                        "completion": 0.0
+                                    },
+                                    "glm-3-turbo": {
+                                        "prompt": 0.0007,
+                                        "completion": 0.0007
+                                    },
+                                    "glm-4": {
+                                        "prompt": 0.014,
+                                        "completion": 0.014
+                                    },
+                                    "gemini-pro": {
+                                        "prompt": 0.00025,
+                                        "completion": 0.0005
+                                    },
+                                    "moonshot-v1-8k": {
+                                        "prompt": 0.012,
+                                        "completion": 0.012
+                                    },
+                                    "moonshot-v1-32k": {
+                                        "prompt": 0.024,
+                                        "completion": 0.024
+                                    },
+                                    "moonshot-v1-128k": {
+                                        "prompt": 0.06,
+                                        "completion": 0.06
+                                    },
+                                    "open-mistral-7b": {
+                                        "prompt": 0.00025,
+                                        "completion": 0.00025
+                                    },
+                                    "open-mixtral-8x7b": {
+                                        "prompt": 0.0007,
+                                        "completion": 0.0007
+                                    },
+                                    "mistral-small-latest": {
+                                        "prompt": 0.002,
+                                        "completion": 0.006
+                                    },
+                                    "mistral-medium-latest": {
+                                        "prompt": 0.0027,
+                                        "completion": 0.0081
+                                    },
+                                    "mistral-large-latest": {
+                                        "prompt": 0.008,
+                                        "completion": 0.024
+                                    },
+                                    "claude-instant-1.2": {
+                                        "prompt": 0.0008,
+                                        "completion": 0.0024
+                                    },
+                                    "claude-2.0": {
+                                        "prompt": 0.008,
+                                        "completion": 0.024
+                                    },
+                                    "claude-2.1": {
+                                        "prompt": 0.008,
+                                        "completion": 0.024
+                                    },
+                                    "claude-3-sonnet-20240229": {
+                                        "prompt": 0.003,
+                                        "completion": 0.015
+                                    },
+                                    "claude-3-opus-20240229": {
+                                        "prompt": 0.015,
+                                        "completion": 0.075
+                                    },
+                                    "yi-34b-chat-0205": {
+                                        "prompt": 0.0003,
+                                        "completion": 0.0003
+                                    },
+                                    "yi-34b-chat-200k": {
+                                        "prompt": 0.0017,
+                                        "completion": 0.0017
+                                    }
+                                }
+                            }
+                        },
+                        "prefix": "You are a Republican, named Trump, your goal is . ",
+                        "desc": "",
+                        "__module_class_name": "__main__.SpeakAloud"
+                    }
+                ],
+                "rc": {
+                    "memory": {
+                        "storage": [],
+                        "index": {},
+                        "ignore_id": false
+                    },
+                    "working_memory": {
+                        "storage": [],
+                        "index": {},
+                        "ignore_id": false
+                    },
+                    "state": -1,
+                    "watch": [
+                        "metagpt.actions.add_requirement.UserRequirement",
+                        "__main__.SpeakAloud"
+                    ],
+                    "react_mode": "react",
+                    "max_react_loop": 1
+                },
+                "addresses": [
+                    "Trump",
+                    "__main__.Debator"
+                ],
+                "planner": {
+                    "plan": {
+                        "goal": "",
+                        "context": "",
+                        "tasks": [],
+                        "task_map": {},
+                        "current_task_id": ""
+                    },
+                    "working_memory": {
+                        "storage": [],
+                        "index": {},
+                        "ignore_id": false
+                    },
+                    "auto_run": false
+                },
+                "recovered": false,
+                "latest_observed_msg": null,
+                "opponent_name": "Biden",
+                "__module_class_name": "__main__.Debator"
+            }
+        },
+        "history": "\nHuman: idea=TOPIC"
+    },
+    "investment": 30.0,
+    "idea": "idea=TOPIC"
+}

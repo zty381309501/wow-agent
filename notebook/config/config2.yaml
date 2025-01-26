@@ -1,0 +1,6 @@
+llm:
+  api_type: 'open_llm'
+  base_url: 'http://192.168.12.10:8000/v1'
+  api_key: '123'
+  model: 'Qwen2.5-32B-Instruct-AWQ'
+  repair_llm_output: true
